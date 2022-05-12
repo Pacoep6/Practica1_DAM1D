@@ -19,6 +19,7 @@ public class EntornosPGit {
     public static void main(String[] args) {
         int selec = 0;
         Scanner sc = new Scanner(System.in);
+        int num, numMax = 0, numMin = 0;
         //instrucciones
         System.out.println("Bienvenido al mostrador de máximos y mínimos");
         System.out.println("¿Desde dónde quiere trabajar? \n 1) Fichero \n 2) Consola \n Otro: salir)");
@@ -36,6 +37,26 @@ public class EntornosPGit {
             case 2:
                 //HACER CLASE QUE PERMITA METER NUMS DESDE CONSOLA!!!-----------------
                 //y codificar aquí la llamada a método máximo y mínimo----------------
+
+                System.out.println("Añade 5 numeros.");
+                
+                num=sc.nextInt();
+                numMax=num;
+                numMin=num;
+               
+                for (int i = 0; i < 4; i++) {
+                    
+                    num = sc.nextInt();
+                    if (num > numMax) {
+                        numMax = num;
+                    } else if (num < numMin) {
+                        numMin = num;
+                    }
+                
+                }
+                System.out.println("El mayor numero es: "+numMax);
+                System.out.println("El menor numero es: "+numMin);
+
                 break;
             default:
                 System.out.println("Saliendo...");
