@@ -18,7 +18,6 @@ public class EntornosPGit {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int selec = 0;
         Scanner sc = new Scanner(System.in);
         //instrucciones
         System.out.println("Bienvenido al mostrador de máximos y mínimos");
