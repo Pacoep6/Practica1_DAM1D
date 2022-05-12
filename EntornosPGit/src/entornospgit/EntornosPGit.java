@@ -11,6 +11,7 @@ import java.util.Scanner;
  *
  * @author Ronaldinho
  */
+//Comentario ejercicio 4
 public class EntornosPGit {
     static int[] ArrNum = new int[7];
     
@@ -27,6 +28,7 @@ public class EntornosPGit {
         int selec = 0;
        
         Scanner sc = new Scanner(System.in);
+        int num, numMax = 0, numMin = 0;
         //instrucciones
         System.out.println("Bienvenido al mostrador de máximos y mínimos");
         System.out.println("¿Desde dónde quiere trabajar? \n 1) Fichero \n 2) Consola \n Otro: salir)");
@@ -37,6 +39,7 @@ public class EntornosPGit {
             case 1:
                 DesdeFichero fich = new DesdeFichero();
                 fich.maximo();
+
                // fich.minimo();
 
                 break;

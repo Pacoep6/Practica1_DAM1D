@@ -46,9 +46,10 @@ public class DesdeFichero {
         } catch (Exception e) {
             System.out.println(e);
         }
-        
+        //Comentario
 
     }
+
 
     public void minimo(int [] Arrnum) {
         int min = 0;
@@ -59,8 +60,10 @@ public class DesdeFichero {
                 }
             }
         System.out.println(min);
+
     }
 }
+
 
 
 
