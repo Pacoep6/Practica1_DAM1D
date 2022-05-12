@@ -50,8 +50,15 @@ public class DesdeFichero {
 
     }
 
-    public void minimo() {
-        //insertar codigo para mostrar mínimo ---------------
+    public void minimo(int [] Arrnum) {
+        int min = 0;
+        for (int z = 0; z < Arrnum.length-1; z++) {
+                min = Arrnum[z];
+                if (min<Arrnum[z+1]) {
+                    Arrnum[z+1] = min;
+                }
+            }
+        System.out.println(min);
     }
 }
 

@@ -12,12 +12,20 @@ import java.util.Scanner;
  * @author Ronaldinho
  */
 public class EntornosPGit {
-
-    /**
-     * @param args the command line arguments
-     */
+    static int[] ArrNum = new int[7];
+    
+    
+    public static void meterNumeros(){
+        Scanner reader = new Scanner(System.in);
+        for (int i = 0; i < ArrNum.length; i++) {
+            System.out.println("Mete un numero");
+            ArrNum[i]=reader.nextInt();
+        }
+    }
+        
     public static void main(String[] args) {
         int selec = 0;
+       
         Scanner sc = new Scanner(System.in);
         //instrucciones
         System.out.println("Bienvenido al mostrador de máximos y mínimos");
@@ -29,13 +37,14 @@ public class EntornosPGit {
             case 1:
                 DesdeFichero fich = new DesdeFichero();
                 fich.maximo();
-                fich.minimo();
+               // fich.minimo();
 
                 break;
 
             case 2:
-                //HACER CLASE QUE PERMITA METER NUMS DESDE CONSOLA!!!-----------------
-                //y codificar aquí la llamada a método máximo y mínimo----------------
+                DesdeFichero df = new DesdeFichero();
+                meterNumeros();
+                df.minimo(ArrNum);
                 break;
             default:
                 System.out.println("Saliendo...");
