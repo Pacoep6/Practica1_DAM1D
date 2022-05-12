@@ -23,6 +23,7 @@ public class EntornosPGit {
         System.out.println("Bienvenido al mostrador de máximos y mínimos");
         System.out.println("¿Desde dónde quiere trabajar? \n 1) Fichero \n 2) Consola \n Otro: salir)");
         System.out.println("Si eliges 1, Recuerda introducir Fichero.txt con los números, a ser posible uno en cada línea");
+        System.out.println("Linea de prueba");
 
         //menú ojo
         switch (sc.nextInt()) {
