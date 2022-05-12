@@ -52,6 +52,7 @@ public class DesdeFichero {
     }
 
     public void minimo() {
+        //insertar codigo para mostrar mínimo ---------------
         //variables
         int min = 0, num = 0;
 
@@ -68,10 +69,16 @@ public class DesdeFichero {
             while (rd.hasNext()) {
                 num = rd.nextInt();
                 if (min > num) {
-                    min = num;
-                }
+                    while (rd.hasNext()) {
+                        num = rd.nextInt();
+                        if (min < num) {
+                            min = num;
+                        }
 
+                    }
+                }
             }
+
             System.out.println("El menor es " + min);
             rd.close();
         } catch (FileNotFoundException e) {
