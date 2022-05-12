@@ -9,7 +9,7 @@ import java.util.Scanner;
 /**
  * El programa mostrará los máximos y mínimos
  *
- * @author PACO
+ * @author Ronaldinho
  */
 public class EntornosPGit {
 
