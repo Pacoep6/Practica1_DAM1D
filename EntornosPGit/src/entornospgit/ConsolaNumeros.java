@@ -21,15 +21,12 @@ public class ConsolaNumeros {
      * @param sc Scanner donde se introducen los numeros
      */
     public void introducirNumeros(Scanner sc) {
-        int max = 0;
-        int min = 0;
         int num = 0;
         int i = 0;
         boolean error = false;
         while (!error) {
             try {
                 System.out.println("Introduce un numero o 0 para salir:");
-
                 num = sc.nextInt();
                 if (i == 0) {
                     max = num;
