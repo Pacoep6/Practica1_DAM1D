@@ -35,8 +35,25 @@ public class EntornosPGit {
                 break;
 
             case 2:
-                //HACER CLASE QUE PERMITA METER NUMS DESDE CONSOLA!!!-----------------
-                //y codificar aquí la llamada a método máximo y mínimo----------------
+                System.out.println("Introduzca los 5 números");
+                int num1=sc.nextInt();
+                int num2=sc.nextInt();
+                int num3=sc.nextInt();
+                int num4=sc.nextInt();
+                int num5=sc.nextInt();
+                System.out.println("Introduce 1 si quieres ver el máximo, 2 si quieres ver el minimo");
+                int elecc=sc.nextInt();
+                if (elecc==1) {
+                    NumerosConsola maximo = new NumerosConsola();
+                    System.out.println(maximo.Max(num1, num2, num3, num4, num5));
+                } else if (elecc==2){
+                    NumerosConsola minimo = new NumerosConsola();
+                    System.out.println(  minimo.Min(num1, num2, num3, num4, num5));
+                       
+                 
+                }
+               
+                
                 break;
             default:
                 System.out.println("Saliendo...");
